@@ -2,4 +2,17 @@
 
 This is a project to build DevOps automated workflow using docker
 
-I will be using a dockerised app
+I will be:
+- Taking a dockerised app made with NodeJS
+- Using Git/Github as code management.
+- Using Circle CI for automated CI that triggers image builds
+- The image build will trigger on docker hub
+- I will be using Tutum container platform for delivery
+- Using AWS for production
+
+## Dockerized app
+An app configured to run in containers.
+To dockerise an app, you will use a dockerfile.
+
+## Dockerfile
+Configureation file containing instructions on how to build a docker image.
