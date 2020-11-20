@@ -19,3 +19,16 @@ Configureation file containing instructions on how to build a docker image.
 
 ## The App
 A very simple app that links to a website.
+
+### Pre-requirements
+
+For the app to run and be teste the following is installation are required.
+
+```
+Express
+Jade
+Mocha
+Supertest
+```
+
+These can be installed with npm
