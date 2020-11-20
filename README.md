@@ -1,5 +1,5 @@
 # Docker DevOps
-
+## Overview
 This is a project to build DevOps automated workflow using docker
 
 I will be:
@@ -10,9 +10,12 @@ I will be:
 - I will be using Tutum container platform for delivery
 - Using AWS for production
 
-## Dockerized app
+### Dockerized app
 An app configured to run in containers.
 To dockerise an app, you will use a dockerfile.
 
-## Dockerfile
+### Dockerfile
 Configureation file containing instructions on how to build a docker image.
+
+## The App
+A very simple app that links to a website.
