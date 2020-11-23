@@ -10,8 +10,7 @@ app.set('veiws', 'veiws');
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res){
-    res.render('home', {
-    });
+    res.render('home');
 });
 
 app.listen(8080);
