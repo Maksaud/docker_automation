@@ -1,7 +1,7 @@
 // async test for http 200 resoponse code using supertest
 'use strict';
 
-var request = requrires("sepertest"),
+var request = require("sepertest"),
     app = require("../app").getApp;
 
 describe('GET /', function(){
