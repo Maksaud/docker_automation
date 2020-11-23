@@ -31,4 +31,12 @@ Mocha
 Supertest
 ```
 
-These can be installed with npm
+These can be installed with npm.
+
+To run the app just type:
+
+```bash
+npm start
+```
+
+And then type localhost:8080 as a URL on your browser
