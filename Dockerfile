@@ -13,7 +13,7 @@ COPY . /src
 
 # Install app and dependencies into /src
 RUN cd /src
-RUN sudo npm install
+RUN npm install
 
 EXPOSE 8080
 
