@@ -10,15 +10,7 @@ RUN yum install -y npm
 
 # Copy app to /src
 COPY . /src
-
-# Create a nonroot user, and switch to it
-RUN /usr/sbin/useradd --create-home --home-dir /usr/local/nonroot --shell /bin/bash nonroot
-RUN chown -R nonroot /usr/local/
-RUN chown -R nonroot /usr/lib/
-RUN chown -R nonroot /usr/bin/
-RUN chown -R nonroot /src
-RUN chown nonroot .npm
-RUN /bin/su nonroot
+COPY package*.json ./
 
 # Install app and dependencies into /src
 RUN cd /src; npm install
