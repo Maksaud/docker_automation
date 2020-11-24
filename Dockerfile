@@ -10,7 +10,7 @@ RUN yum install -y npm
 
 # Copy app to /src
 COPY . /src
-COPY package*.json ./
+COPY package*.json /src
 
 # Install app and dependencies into /src
 RUN cd /src; npm install
