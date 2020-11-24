@@ -13,7 +13,7 @@ COPY . /src
 
 # Create a nonroot user, and switch to it
 RUN /usr/sbin/useradd --create-home --home-dir /usr/local/nonroot --shell /bin/bash nonroot
-RUN /usr/sbin/adduser nonroot sudo
+RUN /usr/sbin/adduser nonroot
 RUN chown -R nonroot /usr/local/
 RUN chown -R nonroot /usr/lib/
 RUN chown -R nonroot /usr/bin/
