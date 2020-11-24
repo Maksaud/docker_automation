@@ -6,14 +6,24 @@ MAINTAINER maksaud@hotmail.com
 RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 
 # Install Node...
+RUN apt-get update
 RUN yum install -y npm
 
 # Copy app to /src
 COPY . /src
 
+# Create a nonroot user, and switch to it
+RUN /usr/sbin/useradd --create-home --home-dir /usr/local/nonroot --shell /bin/bash nonroot
+RUN /usr/sbin/adduser nonroot sudo
+RUN chown -R nonroot /usr/local/
+RUN chown -R nonroot /usr/lib/
+RUN chown -R nonroot /usr/bin/
+RUN chown -R nonroot /src
+
+USER nonroot
+
 # Install app and dependencies into /src
-RUN cd /src
-RUN npm install
+RUN cd /src; npm install
 
 EXPOSE 8080
 
