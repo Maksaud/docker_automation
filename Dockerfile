@@ -17,8 +17,7 @@ RUN chown -R nonroot /usr/local/
 RUN chown -R nonroot /usr/lib/
 RUN chown -R nonroot /usr/bin/
 RUN chown -R nonroot /src
-
-USER nonroot
+RUN /bin/su nonroot
 
 # Install app and dependencies into /src
 RUN cd /src; npm install
