@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM node:7
 
 MAINTAINER maksaud@hotmail.com
 
